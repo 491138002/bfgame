@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/bfgame_page_title_bar" />
+
+    <com.bfgame.app.widget.view.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar"
+        android:cacheColorHint="#00000000" />
+
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_below="@+id/titlebar"
+        layout="@layout/bfgame_list_loading" />
+
+</RelativeLayout>

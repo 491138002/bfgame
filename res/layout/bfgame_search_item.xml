@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="62dp"
+    	android:background="@drawable/bfgame_item_bg_selector"
+    	android:layout_weight="1"
+    	android:layout_marginRight="3dp"
+    	android:layout_marginLeft="5dp"
+    >
+        <RelativeLayout
+            android:id="@+id/item_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/item_icon_iv"
+                android:layout_width="@dimen/item_icon_size"
+                android:layout_height="@dimen/item_icon_size"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/item_name_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/item_icon_iv"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/item_title_sp" />
+
+            <TextView
+                android:id="@+id/item_download_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_name_tv"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/item_icon_iv"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/item_version_sp" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="62dp"
+    	android:background="@drawable/bfgame_item_bg_selector"
+    	android:layout_weight="1"
+    	android:layout_marginLeft="3dp"
+    >
+        <RelativeLayout
+            android:id="@+id/item_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/item_icon_iv"
+                android:layout_width="@dimen/item_icon_size"
+                android:layout_height="@dimen/item_icon_size"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/item_name_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/item_icon_iv"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/item_title_sp" />
+
+            <TextView
+                android:id="@+id/item_download_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_name_tv"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/item_icon_iv"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/item_version_sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+	    
+</LinearLayout>

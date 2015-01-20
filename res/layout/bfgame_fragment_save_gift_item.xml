@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/item_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bfgame_item_bg_selector" >
+
+        <ImageView
+            android:id="@+id/item_icon_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/gift_copy_btn"
+            android:layout_toRightOf="@+id/item_icon_iv"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/item_title_sp" />
+
+
+        <TextView
+            android:id="@+id/item_gift_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:maxLength="16"
+            android:layout_toLeftOf="@+id/gift_copy_btn"
+            android:layout_toRightOf="@+id/item_icon_iv"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/item_version_sp" />
+
+        <Button
+            android:id="@+id/gift_copy_btn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bfgame_btn_blue_selector"
+            android:text="@string/bfgame_btn_copy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_download_btn_sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

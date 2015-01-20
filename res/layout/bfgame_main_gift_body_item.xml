@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/item_body_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/item_download_sp" />
+
+        <TextView
+            android:id="@+id/item_surplus_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/item_download_sp" />
+
+        <ImageView
+            android:id="@+id/item_top_line_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_time_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bfgame_dotted_line" />
+
+        <TextView
+            android:id="@+id/item_gift_content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_top_line_iv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/item_download_sp" />
+
+        <ImageView
+            android:id="@+id/item_bottom_line_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_gift_content_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bfgame_dotted_line" />
+
+        <Button
+            android:id="@+id/item_get_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_bottom_line_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bfgame_btn_blue_selector"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:text="@string/bfgame_gift_receive"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_download_btn_sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_code_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/item_expire_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/item_download_sp" />
+
+        <EditText
+            android:id="@+id/item_code_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_expire_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bfgame_edit_bg"
+            android:editable="false"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/item_download_sp" />
+
+        <Button
+            android:id="@+id/item_copy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_code_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bfgame_btn_blue_selector"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:text="@string/bfgame_btn_copy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_download_btn_sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

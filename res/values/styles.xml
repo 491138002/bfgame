@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- 自定义loading -->
+    <style name="bfgame_custom_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:windowAnimationStyle">@style/bfgame_custom_dialog_animstyle</item>
+    </style>
+
+    <style name="bfgame_custom_dialog_animstyle">
+        <item name="android:windowEnterAnimation">@anim/bfgame_activity_right_in</item>
+        <item name="android:windowExitAnimation">@anim/bfgame_activity_right_out</item>
+    </style>
+
+
+</resources>

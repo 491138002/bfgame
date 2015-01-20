@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BFGameApp</string>
+    <string name="bfgame_loading_titile">加载中...</string>
+    <string name="bfgame_name">暴风游戏中心</string>
+    <string name="bfgift_name">礼包中心</string>
+    <string name="bfgame_game_strategy">游戏攻略</string>
+    <string name="bfgame_not_strategy">没有相关游戏攻略</string>
+    <!-- 列表无信息 -->
+    <string name="list_is_null_text">暂时还没有数据</string>
+    <string name="bfgame_btn_copy">复制</string>
+    <string name="bfgame_btn_submit">确定</string>
+    <string name="bfgame_btn_cancel">取消</string>
+    <string name="bfgame_toast_copy">已经复制到剪切板</string>
+    <string name="bfgame_search_key_is_null">搜索关键字不能为空</string>
+    <string name="bfgame_game_detail_title">游戏介绍</string>
+    <string name="bfgame_gift_expire">请在%s日前使用</string>
+    <string name="bfgame_gift_receive"> 立即领取 </string>
+    <string name="bfgame_gift_receive_loading">领取中</string>
+    <string name="bfgame_description_show">展开</string>
+    <string name="bfgame_description_hide">收起</string>
+    <string name="bfgame_text_download">下载</string>
+    <string name="bfgame_text_all_gift">全部礼包</string>
+    <string name="bfgame_text_receive_gift">已领礼包</string>
+    <string name="bfgame_text_game_raiders">游戏攻略</string>
+    <string name="bfgame_text_game_description">游戏描述</string>
+    <string name="bfgame_text_game_recommend">相关推荐</string>
+    <string name="bfgame_text_new">新服</string>
+    <string name="bfgame_text_gift">活动</string>
+    <string name="bfgame_dwonload_text_start">下载</string>
+    <string name="bfgame_dwonload_text">暂停</string>
+    <string name="bfgame_dwonload_text_downloading">下载中</string>
+    <string name="bfgame_dwonload_text_install">安装</string>
+    <string name="bfgame_dwonload_text_open">打开</string>
+    <string name="bfgame_not_network_title">没有可用的网络</string>
+    <string name="bfgame_not_network_content">请开启3G或WIFI网络连接</string>
+    <string name="bfgame_not_3g_network_title">提示</string>
+    <string name="bfgame_not_3g_network_content">当前为%s网络，请使用WIFI网络下载游戏</string>
+    <string name="bfgame_sdcard_Space_full">SD卡容量不足，请及时清理</string>
+    <string name="bfgame_no_app_pics">没有相关截图</string>
+    <string name="recentupdate">上次更新</string>
+    <string name="pulltorefresh">下拉刷新</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="size">20MB</string>
+    <string name="category">动作</string>
+    <string name="gamename">天天爱西游</string>
+    <string name="gift_tip">礼包提示</string>
+    <string name="tip1">礼包以保存至存号箱。</string>
+    <string name="tip2">礼包请尽快使用，过期即会失效。</string>
+    <string name="active_code">激活码:</string>
+    <string name="code">XX</string>
+    <string name="close">关闭</string>
+
+</resources>

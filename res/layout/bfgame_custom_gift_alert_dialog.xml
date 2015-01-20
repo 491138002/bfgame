@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/gift_tip"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/item_title_sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/main_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tip1"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tip2"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/bt_copy"
+            android:background="@drawable/bfgame_edit_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active_code"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_copy"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ll_text"
+            android:background="@color/main_color"
+            android:text="@string/bfgame_btn_copy"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/close_button_bg"
+        android:text="@string/close"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

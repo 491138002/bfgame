@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bfgame_item_bg_selector" >
+
+    <ImageView
+        android:id="@+id/item_icon_iv"
+        android:layout_width="@dimen/item_icon_size"
+        android:layout_height="@dimen/item_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/gift_get_btn"
+        android:layout_toRightOf="@+id/item_icon_iv"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/item_title_sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <ProgressBar
+                android:id="@+id/MyProgressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="@dimen/progress_width"
+                android:layout_height="@dimen/progress_height"
+                android:max="100"
+                android:progress="20"
+                android:progressDrawable="@drawable/my_progress" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/item_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/MyProgressBar"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/item_version_sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_gift_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/item_version_sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gift_get_btn"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bfgame_btn_blue_selector"
+        android:gravity="center"
+        android:text="下载中"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/item_download_btn_sp" />
+
+</RelativeLayout>

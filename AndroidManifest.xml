@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bfgame.app"
+    android:versionCode="5020"
+    android:versionName="5.0.20" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <!-- 关闭应用程序的权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 读写内存卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 创建桌面快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <!-- wifi网络 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 联网 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 配置文件 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.bfgame.app.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 搜索Activity -->
+        <activity
+            android:name="com.bfgame.app.activity.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+            <intent-filter>
+                <action android:name="com.bfgame.app.Search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 分类Activity -->
+        <activity
+            android:name="com.bfgame.app.activity.CategoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bfgame.app.Category" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bfgame.app.activity.DownloadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 游戏详情Activity -->
+        <activity
+            android:name="com.bfgame.app.activity.GameDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bfgame.app.GameDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 礼包Activity -->
+        <activity
+            android:name="com.bfgame.app.activity.GameGiftActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bfgame.app.GameGift" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 图片展示Activity -->
+        <activity
+            android:name="com.bfgame.app.activity.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.bfgame.app.Gallery" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 游戏攻略Activity -->
+        <activity
+            android:name="com.bfgame.app.activity.GameStrategyActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bfgame.app.GameStrategy" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 上报数据Service -->
+        <service
+            android:name="com.bfgame.app.service.UploadService"
+            android:exported="true" />
+    </application>
+
+</manifest>

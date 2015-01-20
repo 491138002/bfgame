@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:layout_margin="0dp" >
+    
+    <com.bfgame.app.widget.view.ChildViewPager
+        android:id="@+id/bannerVP"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+    
+    <com.bfgame.app.widget.view.PointWidget
+        android:id="@+id/banner_ponit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bannerVP"
+        android:layout_marginTop="-10dp"
+	/>
+
+    <include layout="@layout/bfgame_list_loading" android:id="@+id/loading_layout"/>
+</RelativeLayout>
